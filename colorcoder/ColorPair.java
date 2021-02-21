@@ -3,10 +3,10 @@ public class ColorPair {
 	private MajorColor majorColor;
 	private MinorColor minorColor;
 
-	final static String MajorColorNames[] = { "White", "Red", "Black", "Yellow", "Violet" };
-	final static int numberOfMajorColors = MajorColorNames.length;
-	final static String MinorColorNames[] = { "Blue", "Orange", "Green", "Brown", "Slate" };
-	final static int numberOfMinorColors = MinorColorNames.length;
+	final static String majorColorNames[] = { "White", "Red", "Black", "Yellow", "Violet" };
+	final static int numberOfMajorColors = majorColorNames.length;
+	final static String minorColorNames[] = { "Blue", "Orange", "Green", "Brown", "Slate" };
+	final static int numberOfMinorColors = minorColorNames.length;
 
 	public ColorPair(MajorColor major, MinorColor minor) {
 		majorColor = major;
@@ -26,9 +26,9 @@ public class ColorPair {
 	}
 
 	String ToString() {
-		String colorPairStr = MajorColorNames[majorColor.getIndex()];
+		String colorPairStr = majorColorNames[majorColor.getIndex()];
 		colorPairStr += " ";
-		colorPairStr += MinorColorNames[minorColor.getIndex()];
+		colorPairStr += minorColorNames[minorColor.getIndex()];
 		return colorPairStr;
 	}
 	public ColorPair GetColorFromPairNumber(int pairNumber) {
