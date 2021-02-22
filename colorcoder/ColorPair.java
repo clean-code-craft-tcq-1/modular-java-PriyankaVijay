@@ -12,7 +12,8 @@ public class ColorPair {
 		majorColor = major;
 		minorColor = minor;
 	}
-	
+	public ColorPair() {
+	}
 	public MajorColor getMajor() {
 		return majorColor;
 	}
