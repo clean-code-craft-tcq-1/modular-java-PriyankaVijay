@@ -12,11 +12,7 @@ public class ColorPair {
 		majorColor = major;
 		minorColor = minor;
 	}
-
-	public ColorPair() {
-		// TODO Auto-generated constructor stub
-	}
-
+	
 	public MajorColor getMajor() {
 		return majorColor;
 	}
