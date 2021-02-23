@@ -1,5 +1,5 @@
 package colorcoder;
-enum MajorColor implements ColorCode{
+enum MajorColor{
     WHITE(0),
     RED(1),
     BLACK(2),
@@ -9,8 +9,7 @@ enum MajorColor implements ColorCode{
     private MajorColor(int index) {
         this.index = index;
     }
-    @Override
-	public int getIndex() {
+    public int getIndex() {
         return index;
     }
     public static MajorColor fromIndex(int index) {
